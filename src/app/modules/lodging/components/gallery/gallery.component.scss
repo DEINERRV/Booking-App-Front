@@ -1,0 +1,13 @@
+.btn-swiper{
+    @apply w-8 h-8 rounded-full
+        text-white text-lg font-bold
+        bg-white/30 dark:bg-gray-800/30
+        hover:bg-white/50 dark:hover:bg-gray-800/60 
+        hover:ring focus:ring-white dark:hover:ring-gray-800/40;
+}
+
+.swiper-pagination{
+    @apply text-lg font-bold dark:text-white
+        bg-white/30 dark:bg-gray-800/30
+        rounded-xl inline-block px-4;
+}

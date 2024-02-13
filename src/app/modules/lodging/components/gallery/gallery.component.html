@@ -1,0 +1,40 @@
+<div class="relative group md:hidden">
+    <swiper-container 
+    class="bg-emerald-400 h-[28rem]"
+    navigation="true"
+    navigation-next-el=".swiper-button-next" 
+    navigation-prev-el=".swiper-button-prev"
+    pagination="true"
+    pagination-type="fraction"
+    pagination-el=".swiper-pagination">
+      <swiper-slide><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover"></swiper-slide>
+      <swiper-slide>Slide 2</swiper-slide>
+      <swiper-slide>Slide 3</swiper-slide>
+      <swiper-slide>Slide 4</swiper-slide>
+      <swiper-slide>Slide 5</swiper-slide>
+      <swiper-slide>Slide 6</swiper-slide>
+      <swiper-slide>Slide 7</swiper-slide>
+      <swiper-slide>Slide 8</swiper-slide>
+      <swiper-slide>Slide 9</swiper-slide>
+    </swiper-container>
+    
+    <button class="btn-swiper swiper-button-prev invisible group-hover:visible absolute top-1/2 translate-y-[-50%] z-10 ml-2"></button>
+    <button class="btn-swiper swiper-button-next invisible group-hover:visible absolute top-1/2 translate-y-[-50%] right-0 z-10 mr-2"></button>
+    
+    <div class="mb-2 invisible group-hover:visible absolute bottom-0 left-0 right-0 flex justify-center z-10">
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
+<div class="relative m-6 mb-0 hidden md:block">
+    <div class="md:grid grid-cols-4 grid-rows-2 gap-1 h-[30rem]">
+        <div class="col-span-2 row-span-2"><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover rounded-l-xl"></div>
+        <div ><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover"></div>
+        <div><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover rounded-tr-xl"></div>
+        <div><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover"></div>
+        <div><img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover rounded-br-xl"></div>
+    </div>
+    <div class="absolute cursor-pointer m-2 py-2 px-6 rounded-xl bottom-0 right-0 bg-white dark:bg-gray-800 dark:text-white">
+        <p>Show all photos</p>
+    </div>
+</div>

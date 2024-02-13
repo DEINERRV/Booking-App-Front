@@ -1,0 +1,126 @@
+<div class="px-6 divide-y divide-slate-300">
+    <div class="py-6">
+        <h1 class="font-semibold text-3xl">Honeymooner’s Hut</h1>
+        <h2 class="font-medium text-lg mt-4">Habitación privada en isla en Bocas del Toro, Panamá</h2>
+        <p class="text-base">2 huéspedes1 habitación1 cama1 baño privado</p>
+        <p class="font-semibold">estrellas</p>
+    </div>
+    
+    <div class="flex items-center gap-4 py-6">
+        <div class="h-12 w-12">
+            <img src="https://miro.medium.com/v2/0*ZjYSm_q36J4KChdn" class="w-full h-full object-cover rounded-full">
+        </div>
+        <div>
+            <p class="font-semibold text-lg">Anfitrión: Francine</p>
+            <p>1 años anfitrionando</p>
+        </div>
+    </div>
+
+    <div class="py-6">
+        <div class="flex items-start gap-4">
+            <div class="flex items-center justify-center">
+                <ng-icon name="heroSparkles" class="text-3xl"></ng-icon>
+            </div>
+            <div>
+                <p class="font-semibold text-lg">Anfitrión con experiencia</p>
+                <p>Francine tiene 53 reseñas de otros lugares.</p>
+            </div>
+        </div>
+        <div class="flex items-start gap-4 mt-4">
+            <div class="flex items-center justify-center">
+                <ng-icon name="heroClock" class="text-3xl"></ng-icon>
+            </div>
+            <p class="font-semibold text-lg">Cancelación gratuita por 48 horas</p>
+        </div>
+    </div>
+    
+    <div class="py-6">
+        <div class="bg-gray-100 rounded-lg p-3">
+            <p>Parte de la información se muestra en su idioma original.</p>
+            <p class="underline font-semibold">Traducir</p>
+        </div>
+
+        <p class="line-clamp-5 mt-8 text-base">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore similique eligendi laudantium magnam nostrum! Voluptatum quo molestiae saepe enim distinctio iusto possimus! Magni, assumenda ut odit quis blanditiis quam cum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea est nostrum facilis modi vero cum error expedita nemo libero minima tempora tenetur, necessitatibus similique. Dolores nemo est laudantium cumque nihil?</p>
+        <p class="underline font-semibold text-lg mt-4">Mostrar mas</p>
+    </div>
+
+    <div class="py-6">
+        <h3 class="font-semibold text-2xl">Caracteristicas</h3>
+        <swiper-container
+        class="mt-6"
+        free-mode="true"
+        autoplay="true"
+        autoplay-delay="3000"
+        grab-cursor="true"
+        slides-per-view="2"
+        loop="true">
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                    
+                    <p class="font-semibold text-lg">1</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                     
+                    <p class="font-semibold text-lg">2</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                     
+                    <p class="font-semibold text-lg">3</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                     
+                    <p class="font-semibold text-lg">4</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                     
+                    <p class="font-semibold text-lg">5</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="rounded-xl bg-gray-100 p-4 w-60">
+                    <div>
+                        <ng-icon name="ionBedOutline" class="text-3xl"></ng-icon>
+                    </div>                     
+                    <p class="font-semibold text-lg">6</p>
+                    <p>1 cama queen</p>
+                </div>
+            </swiper-slide>
+          </swiper-container>
+    </div>
+
+    <div class="py-6">
+        <app-amenities></app-amenities>
+    </div>
+    
+    <div id="map" class="h-[30rem] mb-10 border"></div>
+
+    <div class="py-6">
+        <h3 class="font-semibold text-2xl">Selecciona la fecha de salida</h3>
+        <p class="text-gray-400 mt-1 mb-5">Agrega las fechas de viaje para obtener precios exactos</p> 
+        
+        <app-calendar></app-calendar>    
+    </div>
+</div>
