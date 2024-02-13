@@ -1,0 +1,30 @@
+<!-- User Button -->
+<div class="relative inline-block">
+    <div 
+    (click)="isOpen = !isOpen"
+    class="w-20 p-1 border-2 rounded-full flex items-center gap-2 cursor-pointer hover:shadow-md">
+        <ng-icon name="heroBars3Solid" class="text-xl stroke-black ml-1"></ng-icon>
+        <div class="h-8 w-8 rounded-full bg-black flex justify-center items-center">
+            <ng-icon name="heroUserSolid" class="text-white text-2xl"></ng-icon>
+        </div>
+    </div>
+
+    @if (isOpen) {
+        <div class="bg-white rounded-xl border shadow w-60 divide-y absolute z-10 right-0 mt-2">
+            <div>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Mensajes</p>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Viajes</p>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Lista de Favoritos</p>
+            </div>
+            <div>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Pon tu espacion en Airbnb</p>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Cuenta</p>
+            </div>
+            <div>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Centro de ayuda</p>
+                <p class="font-medium pl-4 py-2 text-gray-500 hover:bg-black/5">Cierre de sesion</p>
+            </div>
+        </div>    
+    }
+    
+</div>

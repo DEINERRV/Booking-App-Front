@@ -1,0 +1,72 @@
+<div class="relative bg-white rounded-lg shadow dark:bg-gray-700 h-full w-full">
+    <!-- Modal header -->
+    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+        <button 
+        (click)="this.close()"
+        class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8  inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white">
+            Close
+        </button>
+        <h3 class="text-lg font-semibold text-gray-900 dark:text-white">
+            Filtros
+        </h3>
+        <div class="w-8 h-8"></div>
+    </div>
+
+    <!-- Modal body -->
+    <div class="p-4 md:p-5 space-y-4 divide-y">
+        <div class="py-4">
+            <p class="text-2xl font-medium dark:text-white">Tipo de alojamiento</p>
+            <p class="text-gray-700 dark:text-gray-400 mt-2">Busca habitaciones, alojamientos enteros o cualquier tipo de espacio.</p>
+            <div class="mt-8 flex justify-center">
+                <button class="h-16 w-48 text-lg font-semibold rounded-l-lg border darK:border-white hover:border bg-black dark:bg-white">Cualquier Tipo</button>
+                <button class="h-16 w-48 text-lg font-semibold dark:text-white border darK:border-white hover:border">Habitacion</button>
+                <button class="h-16 w-48 text-lg font-semibold rounded-r-lg dark:text-white border darK:border-white hover:border">Alojamiento Entero</button>
+            </div>
+        </div>
+
+        <div class="py-4">
+            <p class="text-2xl font-medium dark:text-white">Rango de precios</p>
+            <p class="text-gray-700 dark:text-gray-400 mt-2">Precios por noche sin incluir impuestos y tarifas</p>
+            
+            <div class="flex flex-col items-center mx-10">
+                <!--sliders-->
+                <div class="flex justify-center mt-10 relative h-20">
+                    <input (input)="this.controlFromSlider(fromSlider.value)" #fromSlider type="range" min="100" max="1500" value="100" class="absolute hover:z-10 w-72 mt-1 h-0 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                    <input (input)="this.controlToSlider(toSlider.value)" #toSlider type="range" min="100" max="1500" value="1500" class="absolute hover:z-10 h-1 w-72 bg-gray-200 rounded-lg appearance-none cursor-pointer">
+                </div>
+                
+                <!--inputs-->
+                <div class="mt-10 flex justify-between items-center gap-5 w-full">
+                    <div class="relative h-16 w-full">
+                        <p class="absolute top-0 left-0 dark:text-white pl-5 pt-2">Minimo</p>
+                        <input type="number" class="appearance-none p-5 pt-10 h-full w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+    
+                    <div class="h-[1px] bg-gray-300 w-10"></div>
+    
+                    <div class="relative h-16 w-full">
+                        <p class="absolute top-0 left-0 dark:text-white pl-5 pt-2">Maximo</p>
+                        <input type="number" class="appearance-none p-5 pt-10 h-full w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+
+        <div>
+            <p class="text-2xl font-medium dark:text-white">Habitaciones y Baños</p>
+            
+            <p class="text-gray-700 dark:text-gray-400 mt-2">Busca habitaciones, alojamientos enteros o cualquier tipo de espacio.</p>
+        </div>
+    </div>
+
+    <!-- Modal footer -->
+    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+        <button data-modal-hide="default-modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+            accept</button>
+        <button data-modal-hide="default-modal" type="button"
+            class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+    </div>
+</div>

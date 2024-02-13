@@ -1,0 +1,61 @@
+<!-- Header SM -->
+<div class="flex items-center gap-4 md:hidden">
+    <div class="border border-gray-200 shadow-lg rounded-full flex items-center p-1 w-full cursor-pointer">
+        <ng-icon name="heroMagnifyingGlass" class="text-2xl mr-4 ml-4"></ng-icon>
+        <div>
+            <p class="font-medium text-base">En culaquier lugar del mundo</p>
+            <p class="text-gray-400 text-sm">Cualquier semana. Cuando?</p>
+        </div>
+    </div>
+
+    <!-- Filter btn -->
+    <app-filter-btn></app-filter-btn>
+</div>
+
+<!-- Header MD -->
+<div class="hidden md:flex flex-col items-center">
+    <!-- Logo, text, config btn-->
+    <div class="flex justify-between items-center w-full">
+        <p class="text-2xl font-bold text-red-500">airbnb</p>
+
+        <div class="flex justify-between text-gray-500 text-lg font-semibold gap-4">
+            <p class="hover:bg-black/5 px-4 py-2 rounded-full">Estadias</p>
+            <p class="hover:bg-black/5 px-4 py-2 rounded-full">Experiencias</p>
+            <p class="hover:bg-black/5 px-4 py-2 rounded-full">
+                Experiencias en linea
+            </p>
+        </div>
+
+        <app-config-btn></app-config-btn>
+    </div>
+
+    <!-- Search MD -->
+    <div
+    class="content-center border border-gray-200 shadow-lg rounded-full grid grid-cols-6 w-full cursor-pointer mt-4 max-w-[50rem]">
+        <div class="col-span-2 rounded-full p-2 pl-8 hover:bg-black/5">
+            <p class="font-medium text-base text-gray-600">Donde</p>
+            <p class="text-gray-400 text-sm">Explra destinos</p>
+        </div>
+
+        <div class="rounded-full p-2 pl-5 hover:bg-black/5">
+            <p class="font-medium text-base text-gray-600">Legada</p>
+            <p class="text-gray-400 text-sm">Cuando?</p>
+        </div>
+
+        <div class="rounded-full p-2 pl-5 hover:bg-black/5">
+            <p class="font-medium text-base text-gray-600">Salida</p>
+            <p class="text-gray-400 text-sm">Cuando?</p>
+        </div>
+
+        <div class="flex justify-between col-span-2 rounded-full p-2 pl-5 hover:bg-black/5">
+            <div>
+                <p class="font-medium text-base text-gray-600">Quien</p>
+                <p class="text-gray-400 text-sm">Cuantos?</p>
+            </div>
+
+            <div class="bg-red-400 h-12 w-12 rounded-full flex justify-center items-center">
+                <ng-icon name="heroMagnifyingGlass" class="text-2xl text-white"></ng-icon>
+            </div>
+        </div>
+    </div>
+</div>
